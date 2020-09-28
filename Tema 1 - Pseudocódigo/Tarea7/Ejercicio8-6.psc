@@ -1,16 +1,11 @@
 Proceso contar_usando_mientras
 	
+	
 	Definir num1 Como Entero;
-	Definir contador Como Entero;
-	
-	contador = 0
-	num1 = contador
-	
-	contador = contador +1;
 	
 	
 	
-	Repetir
-		Escribir num1 
-	Hasta Que num1 > 15
+	Para num1<-1 Hasta 15 Con Paso 1 Hacer
+		Escribir num1;
+	Fin Para
 FinProceso
