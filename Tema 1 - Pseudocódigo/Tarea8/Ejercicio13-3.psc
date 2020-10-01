@@ -11,6 +11,7 @@ Fin SubProceso
 Proceso pares_impares
 	Definir num Como Entero;
 	Escribir "Introduce un número"
+	
 	Leer num
 	
 	EsPar(num);
