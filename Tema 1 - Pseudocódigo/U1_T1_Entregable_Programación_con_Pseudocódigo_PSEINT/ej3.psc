@@ -1,45 +1,28 @@
 Proceso reloj_arena_asteriscos
 	
 	
-	Definir tam Como Entero;
+	Definir altura Como Entero;
 	Definir contador como entero;
-	Definir i	 Como Entero;
+	Definir i Como Entero;
+	Definir j Como Entero;
 	
-	Escribir "Intrduce la altura del reloj"
-	Leer tam;
-	Mientras tam%2=0 o tam<3 Hacer
-		Escribir "Tiene que ser mayor que 3 e impar";
-		Escribir "Introduce el tamaño del reloj de arena";
-		Leer tam;
-	Fin Mientras
+	Repetir
+		Escribir "Introduce la altura del reloj, que deberá ser un número impar y mayor que 3"
+		Leer altura;
+	Hasta Que (altura %2 <> 0) y altura >=3
 	
-	Para contador<-tam Hasta 1 Con Paso -2 Hacer
-		
-		
-		Para i<-1 Hasta (tam-contador)/2 con paso 1 Hacer
-			Escribir sin saltar " ";
+	Para i<-0 Hasta altura -1 Con Paso 1 Hacer
+		Para j<-0 Hasta altura -1 Con Paso 1 Hacer
+			Si (j >= i y j <(altura -i)) o (i > altura/2 y j<= i y j >= (altura - i -1))Entonces
+				Escribir Sin Saltar" * "
+			SiNo
+				Escribir Sin Saltar  "   "
+			Fin Si
 		Fin Para
-		
-		
-		Para i<-contador Hasta 1 Hacer
-			Escribir sin saltar "*";
-		Fin Para
-		
-		Escribir " ";
+		Escribir " "
 	Fin Para
 	
-	Para contador<-3 Hasta tam Con Paso 2 Hacer
-		
-		
-		Para i<-1 Hasta (tam-contador)/2 con paso 1 Hacer
-			Escribir sin saltar " ";
-		Fin Para
-		
-		
-		Para i<-contador Hasta 1 Hacer
-			Escribir sin saltar "*";
-		Fin Para
-		
-		Escribir " ";
-	Fin Para
+
+	
+	
 FinProceso
