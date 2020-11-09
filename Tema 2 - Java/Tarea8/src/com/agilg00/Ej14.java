@@ -14,7 +14,7 @@ public class Ej14 {
 
         for (int i = 0; i <=altura ; i++) {
             for (int j = 0; j <= altura; j++) {
-                if (i+j <=altura ){
+                if (i+j >=altura ){
                     System.out.print("*");
                 }else {
                     System.out.print(" ");
