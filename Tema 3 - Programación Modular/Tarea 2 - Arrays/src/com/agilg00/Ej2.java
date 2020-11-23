@@ -1,6 +1,6 @@
 package com.agilg00;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Ej2 {
@@ -22,10 +22,6 @@ public class Ej2 {
             numeros[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < numeros.length ; i--) {
 
-            System.out.println(numeros[i]);
-
-        }
     }
 }
