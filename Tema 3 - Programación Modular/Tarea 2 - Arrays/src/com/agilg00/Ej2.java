@@ -15,6 +15,7 @@ public class Ej2 {
         System.out.println("Introduce el número de números");
         nums = sc.nextInt();
 
+
         int[] numeros = new int[nums];
         System.out.println("Introduce los números");
 

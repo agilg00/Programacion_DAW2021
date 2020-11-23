@@ -20,6 +20,7 @@ public class Ej1 {
 
             System.out.println(numeros[i]);
 
+
         }
     }
 }

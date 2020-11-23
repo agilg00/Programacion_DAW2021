@@ -28,6 +28,7 @@ public class Ej3 {
 
         int x;
 
+
         for (x = 0; x <numeros.length ; x++) {
             numeros[x] = sc.nextInt();
 
