@@ -1,10 +1,15 @@
 package com.agilg00;
 
+import java.util.Scanner;
+
 public class Ej3 {
     public static void main(String[] args) {
-
-        int[][] numeros = new int[5][5];
-        int[][] rellenoAleatorio = new int[5][5];
+        Scanner sc = new Scanner(System.in);
+        int t;
+        System.out.println("introduce el tamaño del array");
+        t = sc.nextInt();
+        int[][] numeros = new int[t][t];
+        int[][] rellenoAleatorio = new int[t][t];
 
         for (int i = 0; i < rellenoAleatorio.length; i++) {
             for (int j = 0; j < rellenoAleatorio.length; j++) {
