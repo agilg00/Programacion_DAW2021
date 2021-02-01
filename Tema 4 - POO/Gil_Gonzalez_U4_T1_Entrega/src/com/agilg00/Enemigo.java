@@ -37,6 +37,8 @@ public class Enemigo {
         this.pdanyo = pdanyo;
     }
 
+
+
     @Override
     public String toString() {
         return "Enemigo{" +
@@ -45,4 +47,6 @@ public class Enemigo {
                 ", puntos daño=" + pdanyo +
                 '}';
     }
+
+
 }
